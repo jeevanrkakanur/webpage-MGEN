@@ -1,34 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>MicroGenesis Techsoft</title>
+
     <style>
         body {
-            font-family: Arial;
-            background-color: #f4f6f8;
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(to right, #eef2f7, #f9fbfd);
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 30px 20px;
             text-align: center;
-            padding-top: 100px;
         }
-        h1 {
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .container h2 {
             color: #003366;
+            margin-bottom: 15px;
         }
+
+        .container p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .tech-stack {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #f4f6f8;
+            width: 220px;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
         footer {
             margin-top: 50px;
-            color: gray;
+            padding: 15px;
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer span {
+            opacity: 0.85;
         }
     </style>
 </head>
+
 <body>
 
-    <h1>Welcome to MicroGenesis Techsoft</h1>
-    <p>Empowering Innovation Through Technology</p>
+    <header>
+        <h1>Welcome to MicroGenesis Techsoft</h1>
+        <p>Empowering Innovation Through Technology</p>
+    </header>
 
-    <h3>CI/CD Demo Project</h3>
-    <p>This page is automatically deployed using:</p>
-    <p>GitHub | Jenkins | Apache HTTP Server</p>
+    <div class="container">
+        <h2>CI/CD Automation Demo</h2>
+        <p>
+            This web page demonstrates a complete end-to-end CI/CD pipeline.
+            Any changes pushed to GitHub are automatically built and deployed
+            to the Apache Web Server using Jenkins.
+        </p>
+
+        <div class="tech-stack">
+            <div class="card">
+                <h3>GitHub</h3>
+                <p>Source code management and version control.</p>
+            </div>
+
+            <div class="card">
+                <h3>Jenkins</h3>
+                <p>Continuous Integration and automated deployment pipeline.</p>
+            </div>
+
+            <div class="card">
+                <h3>Apache</h3>
+                <p>Web server hosting the deployed application.</p>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <p>Deployed via Jenkins Pipeline</p>
+        <span>Deployed automatically via Jenkins Pipeline | MicroGenesis Techsoft</span>
     </footer>
 
 </body>
